@@ -1,0 +1,168 @@
+.carrossel {
+    color: var(--laranja);
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0; /* começando no topo e indo para a direita, como relogio */
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card__descricao {
+    display: flex; /* formar a coluna */
+    justify-content: space-between; /* faz o espaçamento entre os elementos de cada coluna */
+    margin-bottom: 0.5em;
+}
+
+.card__botões {
+    display: flex;  /* formar a coluna */
+    justify-content: space-between; /* faz o espaçamento entre os elementos de cada coluna */
+}
+
+.botões {
+    display: flex;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px rgba(0, 0, 0 , 0.25);
+    border-radius:10px;
+    margin: 1em;
+    padding: 1em;
+    text-transform: none;
+    text-align: left;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.85);
+}
+
+.botões__item {
+    margin: 0 0.5em;
+}
+
+.botões__ancora {
+    background-color: var(--laranja);
+    padding: 1em 1.6em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.carrossel__2 {
+    color: var(--laranja);
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0; /* começando no topo e indo para a direita, como relogio */
+}
+
+.card__2 {
+    background: var(--branco);
+    box-shadow: 0px 4px rgba(0, 0, 0 , 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    text-transform: none;
+    text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel,
+    .carrossel__2 {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0 2em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+}
+
+    .card,
+    .card__2 {
+    width: 40%;
+    margin: 2em auto;
+    }
+    
+    .botões__ancora {
+        padding: 0.7em 0.3em;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .carrosel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw; /* vw= largura do view port = tela */
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+    .swiper {
+        width: 50%;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .descricao {
+        margin-right: 2em;
+    }
+
+    .card,
+    .card__2 {
+        width: 60%;
+        margin-left: 3em;
+    }
+    
+}
+
